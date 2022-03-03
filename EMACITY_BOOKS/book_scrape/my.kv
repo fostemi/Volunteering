@@ -1,0 +1,20 @@
+<MyGrid>
+	
+	isbn: isbn
+
+	GridLayout:
+		cols: 1
+		size: root.width, root.height/2
+		pos: 100, 100
+
+		GridLayout:
+			cols:2
+			Label:
+				text: "ISBN: "
+			TextInput:
+				id: isbn
+				multiline: False
+		
+		Button:
+			text: "Submit"
+			on_press: root.btn()
